@@ -49,21 +49,21 @@ Trains a byte-level BPE tokenizer on text, builds a retention-based model, train
 | window                 |         32           |           Training window size (tokens)                 |
 | decay_min / decay_max  |         0.7 / 0.95   |           Multi-scale retention decay range             |
 
-load_and_generate(pr_path, prompt, max_tokens=20) -> str
-Loads a .pr file and greedily generates a continuation of prompt.
+** load_and_generate(pr_path, prompt, max_tokens=20) -> str **
+**Loads a .pr file and greedily generates a continuation of prompt.**
 
-##What Makes This Different
+## What Makes This Different
 
-#No attention, no softmax in the core loop —
-retention uses a linear decay mechanism instead, which is what makes the O(1) recurrent inference form possible.
-#Every core operation is validated —
-forward/backward equivalence, numerical gradient checking, and forward-parallel vs. forward-recurrent equivalence were all checked before this was trusted to work.
-#Multi-scale decay — 
-each attention head "forgets" at a different rate, so the model retains both short- and long-range information without attention's O(N) memory cost.
+- No attention, no softmax in the core loop —
+**retention uses a linear decay mechanism instead, which is what makes the O(1) recurrent inference form possible.**
+- Every core operation is validated —
+**forward/backward equivalence, numerical gradient checking, and forward-parallel vs. forward-recurrent equivalence were all checked before this was trusted to work.**
+- Multi-scale decay — 
+**each attention head "forgets" at a different rate, so the model retains both short- and long-range information without attention's O(N) memory cost.**
 
-##Native CLI & ASM Kernels
+## Native CLI & ASM Kernels
 This PyPI package builds with portable C for maximum compatibility. For SIMD-accelerated (NEON/AVX2) native builds and the full CLI (build / train / delete), see the [Github Repo](https://github.com/Natarizki/pointretta).
 
-##License
+## License
 ![Apache](https://img.shields.io/badge/License-apache2.0-orange?style=plastic&logo=apache&logoSize=10&label=LICENSE&link=https%3A%2F%2Fwww.apache.org%2Flicenses%2FLICENSE-2.0.txt)
 
