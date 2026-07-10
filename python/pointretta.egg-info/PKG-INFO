@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: pointretta
+Version: 0.1.0
+Summary: PointRetta: retention-based LLM, O(N) training O(1) inference
+Requires-Python: >=3.8

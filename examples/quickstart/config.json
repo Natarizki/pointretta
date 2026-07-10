@@ -1,0 +1,14 @@
+{
+  "architecture": {
+    "dim": 32,
+    "layers": 2,
+    "heads": 4,
+    "head_dim": 8,
+    "ffn_hidden": 64,
+    "vocab_size": 280
+  },
+  "retention": {
+    "decay_min": 0.7,
+    "decay_max": 0.95
+  }
+}
