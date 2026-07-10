@@ -29,9 +29,4 @@ ext = Extension(
     libraries=["m"],
 )
 
-setup(
-    name="pointretta",
-    version="0.1.0",
-    packages=["pointretta"],
-    ext_modules=[ext],
-)
+setup(ext_modules=[ext])

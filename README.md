@@ -66,3 +66,5 @@ This PyPI package builds with portable C for maximum compatibility. For SIMD-acc
 ## License
 ![Apache](https://img.shields.io/badge/License-apache2.0-orange?style=plastic&logo=apache&logoSize=10&label=LICENSE&link=https%3A%2F%2Fwww.apache.org%2Flicenses%2FLICENSE-2.0.txt)
 
+or
+[Apache](LICENSE)

@@ -1,0 +1,24 @@
+# Build artifacts
+bin/
+*.o
+*.so
+build/
+dist/
+*.egg-info/
+
+# Model files (these are training outputs, not source)
+*.prtm
+*.pr
+
+# Test scratch
+tmp_test/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+*.swp

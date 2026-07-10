@@ -5,5 +5,36 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pointretta"
 version = "0.1.0"
-description = "PointRetta: retention-based LLM, O(N) training O(1) inference"
+description = "A retention-based language model built from scratch in C: O(N) training, O(1) inference"
+readme = "README.md"
+license = {text = "Apache-2.0"}
 requires-python = ">=3.8"
+authors = [
+    {name = "Natarizki"}
+]
+keywords = [
+    "retention",
+    "flashretention",
+    "adafactor",
+    "llm",
+    "language-model",
+    "transformer-alternative",
+    "retnet",
+    "deep-learning",
+    "nlp",
+    "from-scratch"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: C",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[project.urls]
+Homepage = "https://github.com/Natarizki/pointretta"
+Repository = "https://github.com/Natarizki/pointretta"
+Issues = "https://github.com/Natarizki/pointretta/issues"
