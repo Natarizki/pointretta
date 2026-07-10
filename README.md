@@ -64,7 +64,5 @@ Trains a byte-level BPE tokenizer on text, builds a retention-based model, train
 This PyPI package builds with portable C for maximum compatibility. For SIMD-accelerated (NEON/AVX2) native builds and the full CLI (build / train / delete), see the [Github Repo](https://github.com/Natarizki/pointretta).
 
 ## License
-![Apache](https://img.shields.io/badge/License-apache2.0-orange?style=plastic&logo=apache&logoSize=10&label=LICENSE&link=https%3A%2F%2Fwww.apache.org%2Flicenses%2FLICENSE-2.0.txt)
 
-or
 [Apache](LICENSE)
