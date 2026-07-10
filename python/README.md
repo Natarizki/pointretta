@@ -1,5 +1,6 @@
 ![github repo](https://img.shields.io/badge/github-repo-orange?style=plastic&logo=github&link=https%3A%2F%2FGitHub.com%2FNatarizki%2Fpointretta)
-![Python Package](https://img.shields.io/badge/python-package-blue?style=plastic&logo=python&logoColor=yellow&link=https%3A%2F%2Fpypi.org%2Fproject%2Fpointretta%2F)
+
+
 
 # PointRetta
 
